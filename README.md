@@ -7,3 +7,5 @@ pycharm开发工具，tensorflow版本2.1
 5.with tf.GradientTape() as tape:
 6.  若干个计算过程
 7.  grade = tape.gradient(函数，对谁求导)
+8.tf.ont_hot（待转换数据，depth=几分类）
+9.tf.nn.softmax()#激活函数，使分类符合概率分布
