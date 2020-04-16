@@ -27,4 +27,9 @@
    全连接层：tf.keras.layers.Dense(神经元个数，activation="激活函数"，kernel_regularize=哪种正则化)
    卷积层： tf.keras.layers.Conv2D(filters=卷积核个数，kernel_size=卷积核尺寸，strides=卷积步长，padding="valid"or"same")
    LSTM层：tf.keras.layers.LSTM()
-    
+2.配置神经网络的训练方法：
+   model.compile(optimizer=优化器,
+                 loss=损失函数
+                 metrics=["准确率"])
+          
+    注：优化器是梯度下降的方法，可以优化器名字，也可是函数（可自定义学习率，动量等超参数） 
