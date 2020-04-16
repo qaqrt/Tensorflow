@@ -20,3 +20,11 @@
 17.tf.nn.softmax_cross_entropy_with_logits(y_,y)#激活函数和交叉熵
 18.欠拟合解决方法：1.增加输入特征项，增加网络参数，减少正则化参数
 19.过拟合解决方法：1，数据清洗，增大训练集，采用正则化，增大正则化参数
+
+神经网络构建过程：
+1.构建网络结构  model = tf.keras.models.Sequential([网络结构])
+   拉直层： tf.keras.layers.Flatten()#把输入特征拉直变为一维数组
+   全连接层：tf.keras.layers.Dense(神经元个数，activation="激活函数"，kernel_regularize=哪种正则化)
+   卷积层： tf.keras.layers.Conv2D(filters=卷积核个数，kernel_size=卷积核尺寸，strides=卷积步长，padding="valid"or"same")
+   LSTM层：tf.keras.layers.LSTM()
+    
