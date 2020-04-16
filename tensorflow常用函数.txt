@@ -33,3 +33,5 @@
                  metrics=["准确率"])
           
     注：优化器是梯度下降的方法，可以优化器名字，也可是函数（可自定义学习率，动量等超参数） 
+        metrics可选：accuracy标签和输出都是数值形式  categorical_accuracy:标签和输出是独热码或概率分布 
+        sparse_categorical accuracy:标签是数值，输出是独热码
